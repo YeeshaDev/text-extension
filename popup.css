@@ -1,0 +1,22 @@
+
+body {
+    width: 300px;
+    height: 200px;
+    font-family:'Montserrat', sans-serif;
+    font-size: 14px;
+    padding: 20px;
+    text-align: center;
+    font-weight: 500;
+}
+
+#start-inspection {
+    background-color:rgb(24, 145, 206);
+    border:none; 
+    padding: 10px;
+    color:#fff;
+    font-family:'Montserrat', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 1px;
+
+}
+
