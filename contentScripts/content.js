@@ -14,6 +14,8 @@ function handleMouseOver(event) {
     fontPrimaryFamily: getPrimaryFontFamily(getComputedStyle(target).fontFamily),
     fontFamily: getComputedStyle(target).fontFamily,
   fontSize: getComputedStyle(target).fontSize,
+  fontWeight: getComputedStyle(target).fontWeight,
+  lineHeight: getComputedStyle(target).lineHeight,
   color: getComputedStyle(target).color,
   };
 
@@ -28,18 +30,29 @@ function handleMouseOut() {
 function displayFontProperties(fontProperties) {
   const div = document.createElement("div");
   div.id = "text-inspector";
+  div.setAttribute("data-tooltip", "");
   let fontFamilyText = `Font Family: ${fontProperties.fontFamily}`;
 if (isGoogleFont(fontProperties.fontFamily)) {
   fontFamilyText += " (Google Font)";
 }
+
+const lineHeightText = fontProperties.lineHeight === "normal" ? "Line Height<br/> normal" : `Line Height<br/> ${fontProperties.lineHeight}`;
   div.innerHTML = 
                      ` 
-                     <p>Primary Font Family: ${fontProperties.fontPrimaryFamily}</p>
-                     <p>Google Font Family: ${fontProperties.fontFamily}</p>
-                     <p>Font Family: ${fontProperties.fontSize}</p>
-                     <div class="color-wrapper">
+                     <p>Primary Font Family:<br/> ${fontProperties.fontPrimaryFamily}</p>
+                     <hr/>
+                     <div class="size">
+                     <p>Size<br/> ${fontProperties.fontSize}</p>
+                     <p>Weight<br/> ${fontProperties.fontWeight}</p>
+                     <p>${lineHeightText}</p>
+                     </div>
+                     <hr/>
+                     <div>
+                     <p class="color-box"> Color:<br/> 
                      <span class="color-palette" style="background-color: ${fontProperties.color};"></span>
-                     <p class="color-box">Color: ${fontProperties.color}</p>
+                     ${fontProperties.color}
+                     </p>
+                    
                      
                      </div>
                      
