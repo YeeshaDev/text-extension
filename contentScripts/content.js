@@ -52,15 +52,13 @@ const lineHeightText = fontProperties.lineHeight === "normal" ? "Line Height<br/
                      <span class="color-palette" style="background-color: ${fontProperties.color};"></span>
                      ${fontProperties.color}
                      </p>
-                    
-                     
                      </div>
                      
                      `
                      ;
                      document.body.appendChild(div);
-                   }
-                   
+
+}              
                    function clearFontProperties() {
                      const div = document.getElementById("text-inspector");
                      if (div) {
