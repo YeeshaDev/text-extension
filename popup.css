@@ -1,22 +1,23 @@
 
 body {
-    width: 300px;
-    height: 200px;
-    font-family:'Montserrat', sans-serif;
+   display: flex; 
+   align-items: center;
+   justify-content: center;
+   font-family:'Montserrat', sans-serif;
     font-size: 14px;
+    background-color: rgba(0,0,0,0.3);
+}
+
+main{
+    
     padding: 20px;
     text-align: center;
     font-weight: 500;
+    color: #fff;
 }
 
-#start-inspection {
-    background-color:rgb(24, 145, 206);
-    border:none; 
-    padding: 10px;
-    color:#fff;
-    font-family:'Montserrat', sans-serif;
-    font-size: 1rem;
-    letter-spacing: 1px;
-
+#extension-trigger{
+    border: none;
+    text-decoration: underline;
 }
 
