@@ -5,19 +5,37 @@ body {
    justify-content: center;
    font-family:'Montserrat', sans-serif;
     font-size: 14px;
-    background-color: rgba(0,0,0,0.3);
+    background-color:rgb(19, 18, 18);
+    box-shadow:0 2px 4px #b7b5b5;
+   
 }
 
 main{
-    
-    padding: 20px;
+    position: relative;
+    padding:5px 10px;
     text-align: center;
     font-weight: 500;
-    color: #fff;
+    margin-top: 1rem;
+    
 }
 
 #extension-trigger{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
     border: none;
+    background-color: transparent;
+    font-family:'Montserrat', sans-serif;
+    white-space: nowrap;
+    color: #fff;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-family: 1rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+#extension-trigger:hover{
     text-decoration: underline;
+    
 }
 

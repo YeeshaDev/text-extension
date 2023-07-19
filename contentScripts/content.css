@@ -16,8 +16,10 @@
   }
 
   hr{
-    height: 0;
-    border:0.5px solid #fff;
+    height: 0.5px;
+    width: 100%;
+    background-color: #b7b5b5;
+    border:none;
   }
 
   /* #text-inspector {
@@ -36,7 +38,7 @@
 }*/
 
   #text-inspector p {
-    font-size:18px;
+    font-size:14px;
     letter-spacing: 2px;
     padding: 5px;
     font-family: 'Fraunces',sans-serif;
@@ -49,20 +51,22 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap:0 10px;
-    margin-bottom: 10px;
+    flex-direction:column;
+    gap:0 2px;
+    margin-bottom: 5px;
+    white-space: nowrap;
     
   }
 
   .size{
     display: flex;
     align-items: center;
-    justify-content: center;
     gap:15px;
     text-align: center;
     margin-bottom: 5px;
   }
   .color-palette {
+  
     width: 20px;
     height: 20px;
   
@@ -70,54 +74,5 @@
     
   }
 
-  /* Highlighted feature styles */
-
-#highlight-tooltip {
-  position: fixed;
-  bottom: 0;
-  left: 10px;
-  width:250px;
-  height: 100px;
-  z-index: 9999;
-  gap: 15px;
-  background-color: #333;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  padding: 8px;
-  border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-#highlight-tooltip button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  background-color: #555;
-  color: #fff;
-  padding: 6px 8px;
-  border: none;
-  border-radius: 4px;
-  margin-right: 4px;
-  cursor: pointer;
-}
-
-#highlight-tooltip button:hover {
-  background-color: #777;
-}
-
-#highlight-tooltip button:active {
-  background-color: #444;
-}
-
-/*.highlighted {
-  background-color: #ffcc00 !important;
-  /* Adjust the color to your preference 
-}*/
-
-
- 
+  
   

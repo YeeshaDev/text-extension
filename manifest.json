@@ -15,6 +15,11 @@
           "matches": ["http://*/*", "https://*/*"],
           "js": ["/contentScripts/content.js"],
           "css": ["/contentScripts/content.css"]
+        }, 
+        {
+          "matches": ["http://*/*", "https://*/*"],
+          "js": ["/contentScripts/highlight/highlight.js"],
+          "css": ["/contentScripts/highlight/highlight.css"]
         }
       ]
   }
