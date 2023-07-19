@@ -11,7 +11,7 @@ function activateTextInspection() {
 
   for (const element of elements) {
     element.addEventListener("mouseover", handleMouseOver);
-    element.addEventListener("mousedown", handleMouseOut);
+    element.addEventListener("mouseout", handleMouseOut);
   }
 }
 
@@ -108,6 +108,7 @@ function componentToHex(c) {
   return hex.length === 1 ? "0" + hex : hex;
 }
 
+//clear the text-inspection from the screen
 function clearFontProperties() {
   const div = document.getElementById("text-inspector");
   if (div) {
