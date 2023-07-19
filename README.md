@@ -35,12 +35,6 @@ Contributions to the Text Dropper Chrome extension are welcome! If you find any 
 
 The Text Dropper extension was inspired by the need to inspect font properties and highlight text easily on web pages. It utilizes Chrome's extension API and various web technologies to provide a seamless user experience.
 
-## Contact
-
-For any questions or inquiries, please contact the project maintainer:
-Your Name  
-Email: aishaagunbiade05@gmail.com
-
 ## Disclaimer
 
 The Text Dropper extension is provided as-is and is not responsible for any misuse or damages caused. Use at your own risk.
